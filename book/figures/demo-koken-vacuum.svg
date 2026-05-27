@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180">
+  <rect width="400" height="180" fill="#ffffff" rx="6"/>
+  
+  <!-- Vacuum bell jar -->
+  <path d="M 60 40 L 60 120 Q 90 145 160 140 Q 230 145 260 120 L 260 40 Z" fill="#f0f4f8" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="70" y="35" width="180" height="5" rx="2" fill="#95a5a6"/>
+  
+  <!-- Water in bekerglas -->
+  <rect x="120" y="85" width="50" height="50" rx="4" fill="#d6eaf8" stroke="#2c3e50" stroke-width="1.5"/>
+  <!-- Bubbels -->
+  <circle cx="135" cy="105" r="4" fill="none" stroke="#3498db" stroke-width="1.5"/>
+  <circle cx="155" cy="100" r="3" fill="none" stroke="#3498db" stroke-width="1"/>
+  <circle cx="145" cy="115" r="3.5" fill="none" stroke="#3498db" stroke-width="1.5"/>
+  <circle cx="150" cy="125" r="3" fill="none" stroke="#3498db" stroke-width="1"/>
+  
+  <!-- Thermometer -->
+  <line x1="180" y1="75" x2="180" y2="115" stroke="#e74c3c" stroke-width="3"/>
+  <circle cx="180" cy="118" r="5" fill="#e74c3c"/>
+
+  <!-- Vacuumpomp pijl -->
+  <line x1="250" y1="100" x2="300" y2="100" stroke="#7f8c8d" stroke-width="2"/>
+  <polygon points="300,96 310,100 300,104" fill="#7f8c8d"/>
+  <text x="280" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">vacuüm</text>
+  
+  <text x="160" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Water koken op kamertemperatuur</text>
+</svg>

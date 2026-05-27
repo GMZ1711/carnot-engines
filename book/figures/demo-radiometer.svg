@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180">
+  <rect width="400" height="180" fill="#ffffff" rx="6"/>
+  
+  <!-- Radiometer basis -->
+  <rect x="185" y="110" width="30" height="10" rx="2" fill="#95a5a6"/>
+  <rect x="190" y="85" width="20" height="25" rx="2" fill="#7f8c8d"/>
+  
+  <!-- Glazen bol -->
+  <circle cx="200" cy="65" r="45" fill="#f8fafc" stroke="#2c3e50" stroke-width="1.5" opacity="0.9"/>
+  
+  <!-- Roterende wieken (4-bladig) -->
+  <g transform="translate(200,65) rotate(30)">
+    <rect x="-4" y="-35" width="8" height="35" fill="#2c3e50" rx="2"/>
+    <rect x="-4" y="0" width="8" height="35" fill="#ecf0f1" rx="2"/>
+  </g>
+  <g transform="translate(200,65) rotate(120)">
+    <rect x="-4" y="-35" width="8" height="35" fill="#2c3e50" rx="2"/>
+    <rect x="-4" y="0" width="8" height="35" fill="#ecf0f1" rx="2"/>
+  </g>
+  
+  <!-- Zonlicht pijlen -->
+  <line x1="60" y1="35" x2="155" y2="65" stroke="#f39c12" stroke-width="2.5"/>
+  <line x1="55" y1="55" x2="150" y2="75" stroke="#f39c12" stroke-width="2.5"/>
+  <line x1="65" y1="75" x2="150" y2="80" stroke="#f39c12" stroke-width="2.5"/>
+  
+  <!-- Rotatie pijl -->
+  <path d="M 245 35 A 50 50 0 0 1 250 90" stroke="#27ae60" stroke-width="2" fill="none"/>
+  <polygon points="249,88 255,85 248,82" fill="#27ae60"/>
+
+  <!-- Gas moleculen bij zwarte kant -->
+  <circle cx="168" cy="48" r="3" fill="#3498db" opacity="0.7"/>
+  <circle cx="175" cy="42" r="2.5" fill="#3498db" opacity="0.7"/>
+  <circle cx="230" cy="75" r="3" fill="#bdc3c7" opacity="0.5"/>
+  
+  <text x="200" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">Crookes' Radiometer</text>
+</svg>

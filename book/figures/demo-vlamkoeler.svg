@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180">
+  <rect width="400" height="180" fill="#ffffff" rx="6"/>
+  
+  <!-- Kaars -->
+  <rect x="145" y="60" width="20" height="80" rx="2" fill="#f5e6d3" stroke="#2c3e50" stroke-width="1.5"/>
+  <!-- Lont -->
+  <line x1="155" y1="60" x2="155" y2="55" stroke="#555" stroke-width="2"/>
+  <!-- Vlam -->
+  <path d="M 155 55 Q 165 30 155 20 Q 145 30 155 55 Z" fill="#f39c12" opacity="0.9"/>
+  <path d="M 155 55 Q 162 38 155 28 Q 148 38 155 55 Z" fill="#e74c3c" opacity="0.8"/>
+  
+  <!-- Koperen spiraal -->
+  <g transform="translate(155, 65)">
+    <path d="M 0 0 Q 25 -15 50 -30" stroke="#e67e22" stroke-width="6" fill="none"/>
+    <path d="M 4 4 Q 28 -11 48 -26" stroke="#d35400" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Spiraal doorsnede label -->
+  <text x="220" y="55" font-family="Arial, sans-serif" font-size="10" fill="#e67e22" font-weight="bold">koperen</text>
+  <text x="220" y="68" font-family="Arial, sans-serif" font-size="10" fill="#e67e22" font-weight="bold">spiraal</text>
+
+  <!-- Warmte pijlen weg van de vlam -->
+  <line x1="195" y1="55" x2="235" y2="50" stroke="#e74c3c" stroke-width="1.5"/>
+  <line x1="195" y1="45" x2="240" y2="38" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="250" y="45" font-family="Arial, sans-serif" font-size="9" fill="#e74c3c">warmte afgevoerd</text>
+
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Koper leidt warmte weg — vlam dooft</text>
+</svg>
