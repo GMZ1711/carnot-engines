@@ -1,57 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 620" width="700" height="620">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520">
   <defs>
-    <marker id="arrQhBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+    <marker id="aQh" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
     </marker>
-    <marker id="arrQcBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+    <marker id="aQc" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#3498db"/>
     </marker>
-    <marker id="arrW" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+    <marker id="aW" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
     </marker>
   </defs>
 
-  <rect width="700" height="620" fill="#ffffff" rx="8"/>
+  <rect width="720" height="520" fill="#ffffff" rx="8"/>
 
-  <!-- Warmtepomp apparaat -->
-  <rect x="215" y="85" width="270" height="350" rx="15" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
-  <rect x="230" y="105" width="240" height="30" fill="#3498db2080" rx="8"/>
-  <text x="350" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">WARMTEPOMP</text>
+  <!-- ====== WARM RESERVOIR (boven) ====== -->
+  <text x="360" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c0392b">WARME ZIJDE — T<tspan baseline-shift="sub" font-size="10">h</tspan></text>
+  <rect x="180" y="40" width="360" height="60" rx="12" fill="#fde8e8" stroke="#e74c3c" stroke-width="2"/>
+  <text x="360" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#c0392b">Binnenruimte (woonkamer)</text>
+  <text x="360" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">~ 20 °C</text>
 
-  <!-- Warm reservoir (binnenhuis, warm) -->
-  <rect x="190" y="190" width="320" height="80" rx="10" fill="#fde8e8" stroke="#e74c3c" stroke-width="2"/>
-  <text x="350" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c0392b">WARME ZIJDE — T<tspan baseline-shift="sub" font-size="10">h</tspan></text>
-  <text x="350" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">bijv. woonkamer 20°C</text>
+  <!-- ====== WARMTEPOMP (midden) ====== -->
+  <text x="360" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">WARMTEPOMP</text>
+  <rect x="210" y="135" width="300" height="90" rx="12" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+  <text x="360" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Compressor + warmtewisselaars</text>
+  <text x="360" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">omgekeerde Carnot-cyclus</text>
+  <text x="360" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">COP ≈ 4,5</text>
 
-  <!-- Q_h warmte afvoer (uit pomp naar binnen) -->
-  <line x1="350" y1="270" x2="350" y2="195" stroke="#e74c3c" stroke-width="4" marker-end="url(#arrQhBlue)"/>
-  <text x="365" y="238" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e74c3c">Q<tspan baseline-shift="sub" font-size="10">h</tspan> — warmte afgegeven</text>
+  <!-- ====== KOUD RESERVOIR (onder) ====== -->
+  <text x="360" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2471a3">KOUDE ZIJDE — T<tspan baseline-shift="sub" font-size="10">c</tspan></text>
+  <rect x="180" y="255" width="360" height="60" rx="12" fill="#e8f0fe" stroke="#3498db" stroke-width="2"/>
+  <text x="360" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2471a3">Buitenlucht of bodem</text>
+  <text x="360" y="301" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3498db">~ 2 °C</text>
 
-  <!-- Compressor (arbeid input) -->
-  <line x1="370" y1="310" x2="530" y2="310" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrW)"/>
-  <text x="540" y="314" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">W — stroom in</text>
+  <!-- ====== PIJLEN (links: Qh omhoog, Qc omhoog) ====== -->
 
-  <!-- Koud reservoir (buiten) -->
-  <rect x="190" y="350" width="320" height="85" rx="10" fill="#e8f0fe" stroke="#3498db" stroke-width="2"/>
-  <text x="350" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2471a3">KOUDE ZIJDE — T<tspan baseline-shift="sub" font-size="10">c</tspan></text>
-  <text x="350" y="404" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3498db">bijv. buitenlucht 2°C</text>
+  <!-- Qc: van koude reservoir naar warmtepomp (binnen de pomp) -->
+  <line x1="360" y1="255" x2="360" y2="228" stroke="#3498db" stroke-width="3.5" marker-end="url(#aQc)"/>
 
-  <!-- Q_c warmte opname (van buiten naar pomp) -->
-  <line x1="350" y1="350" x2="350" y2="380" stroke="#3498db" stroke-width="4"/>
-  <text x="430" y="372" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#3498db">Q<tspan baseline-shift="sub" font-size="10">c</tspan> — warmte uit omgeving</text>
+  <!-- Qh: van warmtepomp naar warm reservoir -->
+  <line x1="360" y1="135" x2="360" y2="105" stroke="#e74c3c" stroke-width="3.5" marker-end="url(#aQh)"/>
 
-  <!-- Uitlegend tekst links -->
-  <text x="350" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Energiebalans warmtepomp: Q<tspan baseline-shift="sub" font-size="10">h</tspan> = Q<tspan baseline-shift="sub" font-size="10">c</tspan> + W</text>
-  <text x="350" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#7f8c8d">Eén kWh stroom (W) + warmte uit de omgeving geeft je méér kWh aan warmte</text>
+  <!-- ====== LABELS PER PIJL (voldoende afstand) ====== -->
 
-  <!-- Renderendement formule -->
-  <text x="350" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">COP<tspan baseline-shift="sub" font-size="12">warmtepomp</tspan> = Q<tspan baseline-shift="sub" font-size="12">h</tspan> / W > 1</text>
-  <text x="350" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#95a5a6">De COP kan ver boven 1 liggen: een warmtepomp levert méér warmte dan de elektriciteit die je erin stopt.</text>
+  <!-- Qh label -->
+  <text x="440" y="118" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e74c3c">Q<tspan baseline-shift="sub" font-size="10">h</tspan></text>
+  <text x="500" y="118" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">warmte afgegeven</text>
 
-  <!-- Flow pijlen rond de pomp -->
-  <!-- Qh naar boven -->
-  <!-- Qc naar onder -->
-  <line x1="350" y1="435" x2="350" y2="400" stroke="#3498db" stroke-width="4" marker-end="url(#arrQcBlue)"/>
+  <!-- Qc label -->
+  <text x="440" y="248" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#3498db">Q<tspan baseline-shift="sub" font-size="10">c</tspan></text>
+  <text x="500" y="248" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">warmte uit omgeving</text>
 
-  <text x="350" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a0a0a0" font-style="italic">De pomp verplaatst warmte van koud naar warm — dit gaat nooit vanzelf (tweede hoofdwet)</text>
+  <!-- W: elektriciteitspijl (rechts, van compressor weg) -->
+  <line x1="515" y1="180" x2="620" y2="180" stroke="#2c3e50" stroke-width="3" marker-end="url(#aW)"/>
+  <text x="530" y="168" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">W</text>
+  <text x="560" y="168" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">elektriciteit in</text>
+
+  <!-- ====== FORMULES (onder, apart blok) ====== -->
+  <rect x="100" y="350" width="520" height="155" rx="12" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="1"/>
+
+  <text x="360" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Energiebalans</text>
+  <text x="360" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Q<tspan baseline-shift="sub" font-size="13">h</tspan> = Q<tspan baseline-shift="sub" font-size="13">c</tspan> + W</text>
+
+  <text x="360" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">COP<tspan baseline-shift="sub" font-size="11">warmtepomp</tspan> = Q<tspan baseline-shift="sub" font-size="11">h</tspan> / W  （> 1!)</text>
+
+  <text x="360" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#c0392b">De COP kan ver boven 1 liggen:</text>
+  <text x="360" y="488" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#c0392b">een warmtepomp levert méér warmte dan de elektriciteit die je erin stopt.</text>
 </svg>
