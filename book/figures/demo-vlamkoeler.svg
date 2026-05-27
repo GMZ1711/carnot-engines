@@ -1,62 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" width="500" height="280">
-  <rect width="500" height="280" fill="#ffffff" rx="6"/>
-
-  <!-- Kaars (rechter, groter) -->
-  <rect x="110" y="130" width="30" height="110" rx="3" fill="#f5ebdc" stroke="#2c3e50" stroke-width="1.8"/>
-  
-  <!-- Lont -->
-  <rect x="122" y="122" width="6" height="10" rx="1" fill="#444" stroke="#2c3e50" stroke-width="0.3"/>
-  
-  <!-- Vlam onder de spiraal (geel/oranje) -->
-  <path d="M 125 122 Q 140 95 125 70 Q 110 95 125 122 Z" fill="#f39c12" opacity="0.9"/>
-  <path d="M 125 122 Q 133 100 125 82 Q 117 100 125 122 Z" fill="#e74c3c" opacity="0.75"/>
-
-  <!-- Koperen spiraal (gewikkeld rond de vlamzone) -->
-  <!-- 5 windingen als losse ovalen -->
-  <ellipse cx="125" cy="95" rx="22" ry="8" fill="none" stroke="#e67e22" stroke-width="3"/>
-  <ellipse cx="125" cy="86" rx="24" ry="8" fill="none" stroke="#e67e22" stroke-width="3"/>
-  <ellipse cx="125" cy="77" rx="26" ry="8" fill="none" stroke="#e67e22" stroke-width="3"/>
-  <ellipse cx="125" cy="68" rx="28" ry="8" fill="none" stroke="#e67e22" stroke-width="3"/>
-
-  <!-- Kleine vlam boven de spiraal (wordt weer aangestoken) -->
-  <path d="M 125 52 Q 132 42 125 35 Q 118 42 125 52 Z" fill="#f39c12" opacity="0.7"/>
-  <path d="M 125 52 Q 129 46 125 40 Q 121 46 125 52 Z" fill="#e74c3c" opacity="0.6"/>
-
-  <!-- Labels -->
-  <!-- Onder: brandende vlam -->
-  <text x="40" y="100" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#e67e22">vlam</text>
-  <text x="40" y="115" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#e67e22">onder spiraal</text>
-  
-  <!-- Midden: spiraal label -->
-  <text x="175" y="78" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d35400">koperen</text>
-  <text x="175" y="94" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d35400">spiraal</text>
-  <text x="175" y="110" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">warmte</text>
-  <text x="175" y="124" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">geleider</text>
-
-  <!-- Boven: relight vlam label -->
-  <text x="40" y="50" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#e67e22">opnieuw</text>
-  <text x="40" y="65" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#e67e22">aangestoken</text>
-
-  <!-- Warmte-afvoer pijlen (rechts van spiraal) -->
-  <line x1="160" y1="72" x2="215" y2="60" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrHeat)"/>
-  <line x1="160" y1="78" x2="215" y2="68" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrHeat)"/>
-  <line x1="160" y1="84" x2="215" y2="76" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrHeat)"/>
-
-  <!-- Tekst rechts -->
-  <text x="260" y="56" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">warmte</text>
-  <text x="260" y="72" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">afgevoerd</text>
-
-  <!-- Verklaring onder -->
-  <text x="250" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Zonder spiraal brandt de kaars normaal. De koperen spiraal</text>
-  <text x="250" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">voert warmte zó snel af dat de temperatuur onder de</text>
-  <text x="250" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">ontbrandingstemperatuur zakt. De damp is er nog wél —</text>
-  <text x="250" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">boven de spiraal kun je de vlam opnieuw aansteken.</text>
-
-  <text x="250" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">Koper is een uitstekende warmtegeleider — het "steelt" de activeringsenergie van de vlam.</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260">
   <defs>
-    <marker id="arrHeat" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <marker id="arHeat" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
       <polygon points="0 0, 8 3, 0 6" fill="#e74c3c"/>
     </marker>
+    <marker id="arRelight" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#f39c12"/>
+    </marker>
   </defs>
+
+  <rect width="520" height="260" fill="#ffffff" rx="6"/>
+
+  <!-- ====== LINKERKANT: KAARS + SPIRAAL ====== -->
+
+  <!-- Kaarslijf -->
+  <rect x="50" y="150" width="28" height="85" rx="3" fill="#f5ebdc" stroke="#2c3e50" stroke-width="1.8"/>
+
+  <!-- Lont -->
+  <rect x="62" y="142" width="5" height="10" rx="1" fill="#444"/>
+
+  <!-- Vlampetje (geel, binnenste) -->
+  <path d="M 64 142 Q 78 118 64 95 Q 50 118 64 142 Z" fill="#f39c12" opacity="0.85"/>
+
+  <!-- Vlamkern (rood, binnenste) -->
+  <path d="M 64 142 Q 72 122 64 108 Q 56 122 64 142 Z" fill="#e74c3c" opacity="0.7"/>
+
+  <!-- Koperen spiraal: 4 ovalen rond de vlam -->
+  <ellipse cx="64" cy="118" rx="20" ry="7" fill="none" stroke="#e67e22" stroke-width="3"/>
+  <ellipse cx="64" cy="110" rx="22" ry="7" fill="none" stroke="#e67e22" stroke-width="3"/>
+  <ellipse cx="64" cy="102" rx="24" ry="7" fill="none" stroke="#e67e22" stroke-width="3"/>
+  <ellipse cx="64" cy="94"  rx="26" ry="7" fill="none" stroke="#e67e22" stroke-width="3"/>
+
+  <!-- Relight-vlammetje boven spiraal -->
+  <path d="M 64 77 Q 70 68 64 60 Q 58 68 64 77 Z" fill="#f39c12" opacity="0.55"/>
+
+  <!-- Kort teksten bij de zone -->
+  <text x="36" y="145" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#555">kaarsvet</text>
+  <text x="36" y="135" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#555">+ lont</text>
+
+  <!-- ====== RECHTERKANT: UITLEG (veilig uit de buurt) ====== -->
+
+  <!-- Pijlen van spiraal naar rechts -->
+  <line x1="92" y1="118" x2="155" y2="105" stroke="#e74c3c" stroke-width="2.2" marker-end="url(#arHeat)"/>
+  <line x1="92" y1="110" x2="155" y2="110" stroke="#e74c3c" stroke-width="2.2" marker-end="url(#arHeat)"/>
+  <line x1="92" y1="102" x2="155" y2="115" stroke="#e74c3c" stroke-width="2.2" marker-end="url(#arHeat)"/>
+
+  <!-- Rechter tekstblok 1 (boven) -->
+  <rect x="165" y="55" width="200" height="55" rx="8" fill="#fef5f5" stroke="#e74c3c" stroke-width="1"/>
+  <text x="265" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#c0392b">Warmte afgevoerd</text>
+  <text x="265" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Koperen spiraal geleidt</text>
+  <text x="265" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">warmte weg van de vlam</text>
+
+  <!-- Rechter tekstblok 2 (onder) -->
+  <rect x="165" y="155" width="200" height="55" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="265" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#e67e22">Opnieuw aansteken</text>
+  <text x="265" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Kaarsvetdamp stijgt door</text>
+  <text x="265" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">en is brandbaar — relight!</text>
+
+  <!-- Verbindingspijl naar relight zone -->
+  <path d="M 92 75 Q 115 72 130 72 Q 145 72 160 72" stroke="#f39c12" stroke-width="1.5" fill="none" stroke-dasharray="3,3"/>
+  <polygon points="160,68 168,72 160,76" fill="#f39c12"/>
+
+  <!-- Onderschrift -->
+  <text x="260" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Koper voert de activeringsenergie af: vlam dooft — damp brandt nog!</text>
 </svg>
