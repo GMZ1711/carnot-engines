@@ -1,0 +1,51 @@
+author: Maarten Zweers
+
+execute:
+  execute_notebooks: "off"
+
+html:
+  use_multitoc_numbering: true
+
+sphinx:
+  extra_extensions:
+    - teachbooks_favourites
+  config:
+    language: nl
+    html_js_files:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    html_favicon: "figures/favicon.ico"
+    html_theme_options:
+      logo:
+        text: "Carnot Engines"
+      repository_url: "https://github.com/user/repo"
+      path_to_docs: "book"
+      repository_branch: "main"
+      use_edit_page_button: true
+      use_repository_button: true
+      use_issues_button: true
+      launch_buttons:
+        thebe: false
+      announcement: ""
+    html_show_copyright: false
+    html_last_updated_fmt: ''
+    html_static_path: ["figures"]
+    mathjax3_config:
+      chtml:
+        mtextInheritFont: true
+    keep_warnings: false
+    external_toc_exclude_missing: true
+    external_toc_path: "_toc.yml"
+
+bibtex_bibfiles:
+  - references.bib
+
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - dollarmath
+    - linkify
+    - substitution
+    - tasklist
+  myst_url_schemes: [mailto, http, https]
+  myst_links_external_new_tab: true
+  myst_dmath_double_inline: true

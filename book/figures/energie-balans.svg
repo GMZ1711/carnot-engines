@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400">
+  <defs>
+    <marker id="arrowWarm" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+    <marker id="arrowGroen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+
+  <!-- Achtergrond -->
+  <rect width="700" height="400" fill="#ffffff" rx="8"/>
+
+  <!-- Systeemkader -->
+  <rect x="210" y="50" width="280" height="140" rx="12" fill="#f0f4ff" stroke="#34495e" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="350" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">SYSTEEM (GAS)</text>
+  <text x="350" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Interne energie = U</text>
+
+  <!-- Warmte IN (Q) -->
+  <text x="70" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">WARMTE <tspan font-weight="normal" font-size="12">Q</tspan></text>
+  <line x1="120" y1="120" x2="205" y2="120" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowWarm)"/>
+
+  <!-- Arbeid UIT (W) -->
+  <line x1="350" y1="190" x2="350" y2="270" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowGroen)"/>
+  <text x="370" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">ARBEID <tspan font-weight="normal" font-size="12">W</tspan></text>
+
+  <!-- Energiebalans formule -->
+  <text x="350" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">ΔU = Q − W</text>
+  <line x1="180" y1="338" x2="520" y2="338" stroke="#2c3e50" stroke-width="0.5"/>
+
+  <!-- Uitleg -->
+  <text x="350" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">De verandering in interne energie = toegevoerde warmte − verrichte arbeid</text>
+  <text x="350" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#95a5a6">Dit is de eerste hoofdwet van de thermodynamica</text>
+</svg>

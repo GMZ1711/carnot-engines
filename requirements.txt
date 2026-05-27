@@ -1,0 +1,5 @@
+# TeachBooks package (depends on jupyter-book v1)
+teachbooks
+
+# Recommended Sphinx extensions collection
+git+https://github.com/TeachBooks/TeachBooks-Favourites

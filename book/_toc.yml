@@ -1,0 +1,44 @@
+# Table of Contents: https://jupyterbook.org/en/stable/structure/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+  - caption: Basisthermodynamica
+    numbered: true
+    chapters:
+    - file: thermodynamica/overzicht
+      sections:
+      - file: thermodynamica/energie
+      - file: thermodynamica/eerste-hoofdwet
+      - file: thermodynamica/tweede-hoofdwet
+  - caption: De Carnot-cyclus
+    numbered: true
+    chapters:
+    - file: carnot-cyclus/overzicht
+      sections:
+      - file: carnot-cyclus/ideaal-gas
+      - file: carnot-cyclus/de-cyclus
+      - file: carnot-cyclus/pv-diagram
+  - caption: Rendement
+    numbered: true
+    chapters:
+    - file: rendement/overzicht
+      sections:
+      - file: rendement/carnot-rendement
+  - caption: Toepassingen
+    numbered: true
+    chapters:
+    - file: toepassingen/overzicht
+      sections:
+      - file: toepassingen/warmtemotoren
+      - file: toepassingen/koeling
+  - caption: Oefenen
+    chapters:
+    - file: oefeningen/overzicht
+      sections:
+      - file: oefeningen/berekeningen
+  - caption: Bijlagen
+    chapters:
+    - file: references
+    - file: credits
